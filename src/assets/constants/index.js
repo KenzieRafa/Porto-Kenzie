@@ -107,13 +107,13 @@ export const PROJECTS = [
     technologies: ["Python" ,"Data Visualization", "Web Development"],
   },
  
-  // {
-  //   title: "STEI KLINIK for SPARTA 2023",
-  //   image: project7,
-  //   link: "https://pemilu.hmif.dev/",
-  //   description: `Stei Klinik is a centralized web platform designed to provide ITB students with easy access to various health services and medical information. The website streamlines appointment scheduling and supports student health management in one user-friendly interface.`,
-  //   technologies: ["Next.Js","TypeScript","Firebase","Firestore","REST API","Tailwind CSS","Shadcn UI"],
-  // },
+  {
+    title: "STEI KLINIK for SPARTA 2023",
+    image: project7,
+    //link: "https://pemilu.hmif.dev/",
+    description: `Stei Klinik is a centralized web platform designed to provide ITB students with easy access to various health services and medical information. The website streamlines appointment scheduling and supports student health management in one user-friendly interface.`,
+    technologies: ["Next.Js","TypeScript","Firebase","Firestore","REST API","Tailwind CSS","Shadcn UI"],
+  },
   {
     title: "Pakansuper Marketplace",
     image: project6,
