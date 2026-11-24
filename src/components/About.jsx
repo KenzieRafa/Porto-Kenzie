@@ -4,8 +4,13 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="border-b border-neutral-900 pb-12">
-      <h1 className="my-12 sm:my-16 md:my-20 text-center text-3xl sm:text-4xl font-bold">About Me</h1>
+    <div id="about" className="relative border-b border-neutral-900 pb-16 overflow-hidden">
+      {/* Ambient Blue Glow Effect */}
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 -z-10 w-72 sm:w-96 h-72 sm:h-96 bg-itb-mid/15 rounded-full blur-[120px] pointer-events-none"></div>
+
+      <h1 className="my-12 sm:my-16 md:my-20 text-center text-3xl sm:text-4xl font-bold text-white">
+        About <span className="text-itb-light">Me</span>
+      </h1>
       <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
         <motion.div 
             whileInView={{opacity: 1, x: 0}} 
@@ -13,11 +18,15 @@ const About = () => {
             transition={{duration: 0.5}} 
             className="w-full lg:w-1/2 flex justify-center"
         >
-            <img 
-                className="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl object-cover shadow-xl border border-neutral-800" 
-                src={aboutImg} 
-                alt="about" 
-            />
+            <div className="relative group">
+                {/* Glow ring behind image */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-itb-blue via-itb-mid to-itb-light rounded-3xl blur-md opacity-40 group-hover:opacity-75 transition duration-500"></div>
+                <img 
+                    className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl object-cover shadow-2xl border-2 border-itb-blue/80" 
+                    src={aboutImg} 
+                    alt="about" 
+                />
+            </div>
         </motion.div>
         <motion.div 
             whileInView={{opacity: 1, x: 0}} 
@@ -26,9 +35,11 @@ const About = () => {
             className="w-full lg:w-1/2"
         >
             <div className="flex justify-center lg:justify-start">
-                <p className="my-2 max-w-xl py-2 sm:py-4 text-sm sm:text-base leading-relaxed text-neutral-300 text-center lg:text-left whitespace-pre-line">
-                    {DESCRIPTION}
-                </p>
+                <div className="max-w-xl py-4 sm:py-6 px-5 sm:px-6 rounded-2xl bg-itb-blue/10 border border-itb-blue/30 backdrop-blur-sm shadow-xl">
+                    <p className="text-sm sm:text-base leading-relaxed text-neutral-200 text-center lg:text-left whitespace-pre-line">
+                        {DESCRIPTION}
+                    </p>
+                </div>
             </div>
         </motion.div>
       </div>
