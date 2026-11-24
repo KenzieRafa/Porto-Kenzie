@@ -25,9 +25,9 @@ const Navbar = () => {
             {/* Navigation Links */}
             <div className="flex items-center gap-3 sm:gap-4 md:gap-6 text-xs sm:text-sm md:text-base font-medium text-white">
                 <a href="#hero" className="hover:text-itb-gold transition-colors duration-200">Home</a>
+                <a href="#experience" className="hover:text-itb-gold transition-colors duration-200">Experience</a>
                 <a href="#projects" className="hover:text-itb-gold transition-colors duration-200">Projects</a>
                 <a href="#skills" className="hover:text-itb-gold transition-colors duration-200">Skills</a>
-                <a href="#experience" className="hover:text-itb-gold transition-colors duration-200">Experience</a>
             </div>
         </nav>
     );
