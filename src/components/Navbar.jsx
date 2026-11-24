@@ -25,10 +25,10 @@ const Navbar = () => {
                 </a>
             </div>
             <div className="flex items-center gap-6 text-xl text-white">
-                <a href="#hero" className="hover:text-blue-400">Home</a>
-                <a href="#projects" className="hover:text-blue-400">Projects</a>
-                <a href="#skills" className="hover:text-blue-400">Skills</a>
-                <a href="#experience" className="hover:text-blue-400">Experience</a>
+                <a href="#hero" className="hover:text-itb-gold transition-colors duration-200">Home</a>
+                <a href="#projects" className="hover:text-itb-gold transition-colors duration-200">Projects</a>
+                <a href="#skills" className="hover:text-itb-gold transition-colors duration-200">Skills</a>
+                <a href="#experience" className="hover:text-itb-gold transition-colors duration-200">Experience</a>
             </div>
         </nav>
     );

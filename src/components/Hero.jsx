@@ -13,8 +13,8 @@ const Hero = () => {
         <div className="flex flex-wrap">
             <div className="w-full lg:w-1/2">
                 <div className="flex flex-col items-start">
-                    <motion.h1 variants={container(0)} initial="hidden" animate="visible" className="pb-4 text-6xl font-thick tracking-tight lg:mt-16 lg:text-8xl text-white">Hi, I'm <span className="text-indigo-500">Kenzie</span></motion.h1>
-                    <motion.span variants={container(0.5)} initial="hidden" animate="visible" className="bg-gradient-to-r from-purple-300 via-slate-500 to-blue-500 bg-clip-text text-4xl tracking-tight text-transparent">Information Systems Technology at ITB</motion.span>
+                    <motion.h1 variants={container(0)} initial="hidden" animate="visible" className="pb-4 text-6xl font-thick tracking-tight lg:mt-16 lg:text-8xl text-white">Hi, I'm <span className="text-itb-gold">Kenzie</span></motion.h1>
+                    <motion.span variants={container(0.5)} initial="hidden" animate="visible" className="bg-gradient-to-r from-itb-gold via-itb-mid to-itb-light bg-clip-text text-4xl tracking-tight text-transparent">Information Systems Technology at ITB</motion.span>
                     <motion.p variants={container(1)} initial="hidden" animate="visible" className="my-2 max-w-xl py-6 font-light tracking-tighter">{HERO_CONTENT}</motion.p>
                 </div>
             </div>
