@@ -18,9 +18,21 @@ const iconVariants = (duration) => ({
 
 const Technologies = () => {
   return (
-    <div id="skills" className="border-b border-neutral-800 pb-24">
-      <motion.h1 whileInView={{opacity: 1, y: 0}} initial={{opacity: 0, y: -100}} transition={{duration: 1.5}} className="my-20 text-center text-4xl">Technologies</motion.h1>
-      <motion.div whileInView={{opacity: 1, x: 0}} initial={{opacity: 0, x: -100}} transition={{duration: 1.5}} className="flex flex-wrap items-center justify-center gap-4">
+    <div id="skills" className="border-b border-neutral-800 pb-16 sm:pb-24">
+      <motion.h1 
+        whileInView={{opacity: 1, y: 0}} 
+        initial={{opacity: 0, y: -50}} 
+        transition={{duration: 0.8}} 
+        className="my-12 sm:my-16 md:my-20 text-center text-3xl sm:text-4xl font-bold"
+      >
+        Technologies
+      </motion.h1>
+      <motion.div 
+        whileInView={{opacity: 1, x: 0}} 
+        initial={{opacity: 0, x: -50}} 
+        transition={{duration: 0.8}} 
+        className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 md:gap-6"
+      >
         <motion.a
           variants={iconVariants(2)}
           initial="initial"
@@ -28,9 +40,9 @@ const Technologies = () => {
           href="https://link-to-python-certificate.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-2xl border-4 border-itb-blue p-4"
+          className="rounded-xl sm:rounded-2xl border-2 sm:border-4 border-itb-blue p-3 sm:p-4 hover:border-itb-gold transition-colors"
         >
-          <SiPython className="text-7xl text-yellow-400" />
+          <SiPython className="text-5xl sm:text-6xl md:text-7xl text-yellow-400" />
         </motion.a>
         <motion.a
           variants={iconVariants(5)}
@@ -39,9 +51,9 @@ const Technologies = () => {
           href="https://www.sololearn.com/certificates/CC-B4ZPRVID"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-2xl border-4 border-itb-blue p-4"
+          className="rounded-xl sm:rounded-2xl border-2 sm:border-4 border-itb-blue p-3 sm:p-4 hover:border-itb-gold transition-colors"
         >
-          <SiC className="text-7xl text-itb-light" />
+          <SiC className="text-5xl sm:text-6xl md:text-7xl text-itb-light" />
         </motion.a>
         <motion.a
           variants={iconVariants(4)}
@@ -50,9 +62,9 @@ const Technologies = () => {
           href="https://www.sololearn.com/en/certificates/CC-ILAPZIQD"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-2xl border-4 border-itb-blue p-4"
+          className="rounded-xl sm:rounded-2xl border-2 sm:border-4 border-itb-blue p-3 sm:p-4 hover:border-itb-gold transition-colors"
         >
-          <SiCplusplus className="text-7xl text-itb-mid" />
+          <SiCplusplus className="text-5xl sm:text-6xl md:text-7xl text-itb-mid" />
         </motion.a>
         <motion.a
           variants={iconVariants(2)}
@@ -61,9 +73,9 @@ const Technologies = () => {
           href="https://link-to-haskell-certificate.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-2xl border-4 border-itb-blue p-4"
+          className="rounded-xl sm:rounded-2xl border-2 sm:border-4 border-itb-blue p-3 sm:p-4 hover:border-itb-gold transition-colors"
         >
-          <SiHaskell className="text-7xl text-itb-gold" />
+          <SiHaskell className="text-5xl sm:text-6xl md:text-7xl text-itb-gold" />
         </motion.a>
         <motion.a
           variants={iconVariants(5)}
@@ -72,9 +84,9 @@ const Technologies = () => {
           href="https://progate.com/course_certificate/c7c2f23fsg3ajw"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-2xl border-4 border-itb-blue p-4"
+          className="rounded-xl sm:rounded-2xl border-2 sm:border-4 border-itb-blue p-3 sm:p-4 hover:border-itb-gold transition-colors"
         >
-          <AiOutlineConsoleSql className="text-7xl text-itb-light" />
+          <AiOutlineConsoleSql className="text-5xl sm:text-6xl md:text-7xl text-itb-light" />
         </motion.a>
         <motion.a
           variants={iconVariants(4)}
@@ -83,9 +95,9 @@ const Technologies = () => {
           href="https://progate.com/course_certificate/640c0c8fsfvrto"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-2xl border-4 border-itb-blue p-4"
+          className="rounded-xl sm:rounded-2xl border-2 sm:border-4 border-itb-blue p-3 sm:p-4 hover:border-itb-gold transition-colors"
         >
-          <RiReactjsLine className="text-7xl text-itb-light" />
+          <RiReactjsLine className="text-5xl sm:text-6xl md:text-7xl text-itb-light" />
         </motion.a>
         <motion.a
           variants={iconVariants(2)}
@@ -94,9 +106,9 @@ const Technologies = () => {
           href="https://link-to-tailwind-certificate.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-2xl border-4 border-itb-blue p-4"
+          className="rounded-xl sm:rounded-2xl border-2 sm:border-4 border-itb-blue p-3 sm:p-4 hover:border-itb-gold transition-colors"
         >
-          <SiTailwindcss className="text-7xl text-itb-light" />
+          <SiTailwindcss className="text-5xl sm:text-6xl md:text-7xl text-itb-light" />
         </motion.a>
         <motion.a
           variants={iconVariants(4)}
@@ -104,9 +116,9 @@ const Technologies = () => {
           animate="animate"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-2xl border-4 border-itb-blue p-4"
+          className="rounded-xl sm:rounded-2xl border-2 sm:border-4 border-itb-blue p-3 sm:p-4 hover:border-itb-gold transition-colors"
         >
-          <SiNextdotjs className="text-7xl text-itb-mid" />
+          <SiNextdotjs className="text-5xl sm:text-6xl md:text-7xl text-itb-mid" />
         </motion.a>
         <motion.a
           variants={iconVariants(2)}
@@ -114,9 +126,9 @@ const Technologies = () => {
           animate="animate"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-2xl border-4 border-itb-blue p-4"
+          className="rounded-xl sm:rounded-2xl border-2 sm:border-4 border-itb-blue p-3 sm:p-4 hover:border-itb-gold transition-colors"
         >
-          <SiMongodb className="text-7xl text-itb-gold" />
+          <SiMongodb className="text-5xl sm:text-6xl md:text-7xl text-itb-gold" />
         </motion.a>
         <motion.a
           variants={iconVariants(4)}
@@ -124,9 +136,9 @@ const Technologies = () => {
           animate="animate" 
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-2xl border-4 border-itb-blue p-4"
+          className="rounded-xl sm:rounded-2xl border-2 sm:border-4 border-itb-blue p-3 sm:p-4 hover:border-itb-gold transition-colors"
         >
-          <SiMongoose className="text-7xl text-itb-light" />
+          <SiMongoose className="text-5xl sm:text-6xl md:text-7xl text-itb-light" />
         </motion.a>
         <motion.a
           variants={iconVariants(2)}
@@ -134,9 +146,9 @@ const Technologies = () => {
           animate="animate"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-2xl border-4 border-itb-blue p-4"
+          className="rounded-xl sm:rounded-2xl border-2 sm:border-4 border-itb-blue p-3 sm:p-4 hover:border-itb-gold transition-colors"
         >
-          <SiPrisma className="text-7xl text-itb-light" />
+          <SiPrisma className="text-5xl sm:text-6xl md:text-7xl text-itb-light" />
         </motion.a>
       </motion.div>
     </div>
