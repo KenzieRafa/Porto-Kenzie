@@ -8,80 +8,71 @@ import project8 from "../projects/project8.png";
 import project9 from "../projects/project9.png";
 import project10 from "../projects/project10.png";
 
-export const HERO_CONTENT = `I am an Information System Technology student at ITB with a strong interest in leadership, project management, and digital innovation. I am passionate about developing impactful solutions by combining technology, business, and creative problem solving. My journey has given me experience in leading multidisciplinary teams for digital product development, managing effective marketing campaigns, and founding as well as growing online businesses. I enjoy working with diverse people, facing real-world challenges, and continuously enhancing my skills in technology, communication, and strategy. `
+export const HERO_CONTENT = `Software Engineer and Data Engineer with professional experience at BRI Danareksa Sekuritas and Panda Teknologi Digital, currently studying Information System Technology at ITB. 2× National Champion in AI & Blockchain and Web Development competitions — I build scalable systems, enterprise integrations, and data-driven solutions that deliver measurable impact, from platforms serving 415K+ users to systems generating IDR 50M+ in revenue.`
 
-export const DESCRIPTION = `I am an Information System Technology student at ITB with a strong enthusiasm for technology, leadership, and digital innovation. My academic and organizational journey has allowed me to develop a diverse skill set, particularly in software and web development. I have hands-on experience working with HTML, CSS, Java, Python, SQL, PostgreSQL, Jira, and Wordpress which enables me to design, build, and manage efficient digital solutions across various platforms.
+export const DESCRIPTION = `I am an Information System Technology student at ITB with hands-on professional experience as a Software Engineer and Data Engineer. At BRI Danareksa Sekuritas, I architected e-IPO platform integrations for 415,000 active investment customers and built reporting automation systems supporting a 25K-member WhatsApp community and 84K Instagram followers. At Panda Teknologi Digital, I led a 5-person cross-functional engineering team delivering data solutions for enterprise clients including PLN and Zakat institutions, generating over IDR 50 million in revenue.
 
-My passion for building impactful projects is reflected in my experience leading multidisciplinary teams, managing digital business initiatives, and executing marketing strategies that reach a wide audience. I thrive in dynamic environments that challenge me to combine technical knowledge, creative problem-solving, and strategic thinking.
+I bring strong experience in IT project management and system architecture — having led technical solution design for clients including Pertamina and Bank Indonesia at Inkubator IT, and managing end-to-end project delivery for 6 brands at Abbey Creative, reducing review cycles by 15%.
 
-Beyond technical skills, I have actively participated in business development, project management, and digital marketing, allowing me to collaborate effectively with diverse teams and deliver real-world solutions. I am committed to continuous growth, always seeking new challenges and opportunities to broaden my expertise and make a meaningful impact in the field of information technology.`
+As a 2× national competition champion (AI & Blockchain Hackathon and Web Development), I combine deep technical proficiency with strategic thinking and leadership — building solutions that bridge technology and real-world impact at scale.`
 
 export const EXPERIENCES = [
   {
-    year: "Jan 2024 - Mar 2025",
-    role: "Project & product Manager Douce Dame",
-    company: "Inkubator IT",
-    description: `Currently leading and developing interactive Augmented Reality features for a web application. Responsible for product strategy, team coordination, and frontend development using Next.js, TypeScript, and Tailwind CSS. Implemented responsive UI components and integrated AR libraries to deliver smooth user experience across devices. Focused on building reusable components for efficient and scalable development.`,
-    skills: [ "Product & Project Management", "AR Development" , "Next.Js","TypeScript","Tailwind CSS","Shadcn UI"],
+    year: "Jun 2026 – Sep 2026",
+    role: "Software Engineer",
+    company: "BRI Danareksa Sekuritas",
+    description: `Designed the end-to-end technical architecture for e-IPO integration across BRIGHTS, OMS, OneStop, and IDX, covering technology stack evaluation, database schema design, data flow architecture, API integration, and fund validation mechanisms for an investment platform serving 415K customers. Developed a Python-based data processing and reporting automation system using SQL, Jinja2, Playwright/Chromium, and SMTP/TLS, integrating database querying, financial market data transformation, dynamic HTML report generation, automated image rendering, and email distribution to support reporting across a 25K-member WhatsApp community and an 84K-follower Instagram audience.`,
+    skills: ["Python", "SQL", "System Architecture", "API Integration", "Jinja2", "Playwright", "SMTP/TLS", "Database Design"],
   },
   {
-    year: "Mei 2025 - Agt 2025",
+    year: "Okt 2025 – Sep 2026",
+    role: "Data Engineer",
+    company: "Panda Teknologi Digital",
+    description: `Developed and implemented data-driven solutions for enterprise projects involving PLN and Zakat Institutions, working hands-on across data processing, database development, backend integration, and application implementation to support business and operational requirements. Led a 5-person cross-functional engineering team while contributing to technical development and overseeing project delivery, resource allocation, and business operations, generating over IDR 50 million in revenue.`,
+    skills: ["Data Engineering", "Database Design", "Backend Integration", "SQL", "Team Leadership", "Project Management"],
+  },
+  {
+    year: "Jul 2025 – Sep 2025",
+    role: "Project Officer Intern",
+    company: "Abbey Creative",
+    description: `Managed project requirements and delivery for 6 client brands across multiple industries, translating stakeholder needs into structured project scopes and coordinating cross-functional execution. Designed and implemented a project tracking and workflow management system to centralize project documentation, monitor task progress, and streamline approval workflows, reducing review cycles by 15%.`,
+    skills: ["Project Management", "Workflow Automation", "Stakeholder Management", "Cross-Functional Coordination"],
+  },
+  {
+    year: "Dec 2024 – Aug 2025",
+    role: "IT Project Manager",
+    company: "Inkubator IT",
+    description: `Led IT solution design and architecture for technology projects involving Pertamina and Bank Indonesia, defining system components, technical architecture, and integration approaches aligned with business requirements. Designed end-to-end system workflows, process flows, and functional specifications, translating client requirements into technical solutions while coordinating cross-functional teams to ensure architectural feasibility and alignment with project objectives.`,
+    skills: ["IT Architecture", "System Design", "Enterprise Solutions", "Project Management", "Team Leadership"],
+  },
+  {
+    year: "Jan 2024 – Mar 2025",
+    role: "Project & Product Manager Douce Dame",
+    company: "Inkubator IT",
+    description: `Led product strategy, team coordination, and frontend development of interactive Augmented Reality features for an AR web application using Next.js, TypeScript, and Tailwind CSS. Implemented responsive UI components and integrated AR libraries to deliver a seamless user experience across devices, focusing on reusable components for scalable development.`,
+    skills: ["Product Management", "AR Development", "Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
+  },
+  {
+    year: "Mei 2025 – Agt 2025",
     role: "Project Manager & Developer Stressdew Valley",
     company: "Stressdew Valley for ITB Project",
-    description: `Managed and led the development of a comprehensive Farm Life Simulator game, a Stardew Valley-inspired farming simulation built with Java. Oversaw project architecture, team coordination with 4 programmers, and feature development including complex farming mechanics, NPC interactions, and time-based game systems. Implemented 15+ design patterns including Factory Method, Strategy, Observer, and Command patterns to ensure maintainable, extensible code architecture. Actively contributed to core gameplay systems and UI integration, successfully creating a robust foundation for an educational game development project.`,
-    skills: ["Project & Product Management","Game Development", "Java","Object-Oriented Design","Design Patterns"],
+    description: `Managed and led the development of a Farm Life Simulator game in Java with a team of 4 programmers. Oversaw project architecture, team coordination, and core feature development including farming mechanics, NPC interactions, and time-based systems. Implemented 15+ design patterns (Factory Method, Strategy, Observer, Command) to ensure maintainable, extensible code architecture.`,
+    skills: ["Java", "Object-Oriented Design", "Design Patterns", "Game Development", "Team Coordination"],
   },
   {
-    year: "Dec 2024 - Jan 2024",
-    role: "Project & product Manager Inkubator IT",
-    company: "Inkubator IT",
-    description: `Led the entire product lifecycle for a Python-based web tool that converts raw data into interactive graphical visualizations. Managed requirement gathering, planning, and implementation phases. As developer, designed and optimized data processing and visualization features, ensuring a user-friendly interface and clear, informative charts to support effective data analysis.`,
-    skills: ["Python" , "Product & Project Management", "Data Visualization", "Web Development"],
-  },
-  {
-    year: "Sept 2024 -Okt 2024",
+    year: "Sept 2024 – Okt 2024",
     role: "Project & Product Manager SPARTA 2023",
     company: "STEI KLINIK for SPARTA 2023",
-    description: `Led the development of Stei Klinik, a centralized web platform designed to serve all students at ITB for managing their health needs. Responsible for end-to-end product management including requirement analysis, planning, and team coordination. Guided a multidisciplinary team to build a user-friendly, accessible, and secure website that integrates various health services, appointment scheduling, and medical information. Ensured project delivery aligned with stakeholders’ expectations and improved student access to healthcare resources.`,
-    skills: ["Project Management", "Team Leadership", "Next.Js","TypeScript","Firebase","Firestore","REST API","Tailwind CSS","Shadcn UI"],
+    description: `Led the development of STEI Klinik, a centralized web platform designed for ITB students to access healthcare services and manage health needs. Guided a multidisciplinary team through end-to-end product delivery, implementing appointment scheduling and secure medical records management.`,
+    skills: ["Next.js", "TypeScript", "Firebase", "Firestore", "REST API", "Tailwind CSS", "Team Leadership"],
   },
   {
-    year: "Agt 2023 - Dec 2023",
-    role: "Project Manager & Frontend Developer Pakansuper Marketplace",
+    year: "Agt 2023 – Dec 2023",
+    role: "Project Manager & Frontend Developer Pakansuper",
     company: "Pakansuper",
-    description: `Managed and developed the Pakansuper Marketplace, an online marketplace for animal feed products built with WordPress. Oversaw project planning, team coordination with 2 programmers and 2 designers, and feature development such as product listings and secure transaction integration. Actively contributed to frontend customization and plugin integration, successfully leading the team to represent the campus in a national competition.`,
-    skills: ["WordPress", "Project Management", "Team Leadership", "Web Development"],
+    description: `Managed and developed Pakansuper Marketplace, an online platform for animal feed products. Coordinated a team of programmers and designers, leading feature development and transaction integration, and successfully represented the campus in a national competition.`,
+    skills: ["WordPress", "Web Development", "Project Management", "Team Leadership"],
   },
-  
-  
-  // {
-  //   year: "Jul 2024 - Present",
-  //   role: "Human Resources Management Officer",
-  //   company: "IEEE ITB Student Branch",
-  //   description: `Managing human resources in the organization. Ensure that team members feel valued, motivated, and have everything they need to contribute effectively. Primary duties include recruiting, member development, and team welfare management.`,
-  //   skills: ["Communication","Problem Solving","Time Management","Interpersonal"],
-  // },
-  // {
-  //   year: "Dec 2023 - Jul 2024",
-  //   role: "Staff of Finance",
-  //   company: "BPA STEI-K 2023",
-  //   description: `Manage fundraising activities to meet the needs of the STEI-K 2023. Primary responsibilities include budget planning, transaction recording, fundraising management, and financial reporting.`,
-  //   skills: ["Accounting", "Finance Management", "Marketing", "Analytical Thinking"],
-  // },
-  // {
-  //   year: "Oct 2023 - Jun 2024",
-  //   role: "Member",
-  //   company: "GDSC ITB",
-  //   description: `Get training in the chosen field (Web Development, Mobile Development, Data Science, UI/UX, etc) then work on the final project to get a graduation certificate according to the field.`,
-  //   skills: ["HTML","CSS","JavaScript","React"],
-  // },
-  // {
-  //   year: "March 2024 - May 2024",
-  //   role: "Staff of Sponsorship for STEI-Kesyen",
-  //   company: "STEI-K 2023",
-  //   description: `Managing and developing relationships with sponsors, as well as ensuring sponsor support is achieved properly, obtaining financial and material support necessary for the success of the STEI-Kesyen Event.`,
-  //   skills: ["Negotiation","Interpersonal Skills","Communication","Accounting"],
-  // },
 ];
 
 export const PROJECTS = [
@@ -96,7 +87,7 @@ export const PROJECTS = [
     title: "Stressdew Valley",
     image: project8,
     //link: "https://github.com/LeonArif/Stressdew-Valley.git",
-    description: `Project Simulator is a Stardew Valley-inspired farming game that features comprehensive systems for crop management, NPC interactions, time-based gameplay mechanics, and employs 15+ design patterns to create a maintainable, extensible architecture in Java.RetryClaude can make mistakes. Please double-check responses.`,
+    description: `Project Simulator is a Stardew Valley-inspired farming game that features comprehensive systems for crop management, NPC interactions, time-based gameplay mechanics, and employs 15+ design patterns to create a maintainable, extensible architecture in Java.`,
     technologies: ["Game Development", "Java","Object-Oriented Design","Design Patterns"],
   },
   {
