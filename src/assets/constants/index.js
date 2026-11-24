@@ -52,27 +52,6 @@ export const EXPERIENCES = [
     description: `Led product strategy, team coordination, and frontend development of interactive Augmented Reality features for an AR web application using Next.js, TypeScript, and Tailwind CSS. Implemented responsive UI components and integrated AR libraries to deliver a seamless user experience across devices, focusing on reusable components for scalable development.`,
     skills: ["Product Management", "AR Development", "Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
   },
-  {
-    year: "Mei 2025 – Agt 2025",
-    role: "Project Manager & Developer Stressdew Valley",
-    company: "Stressdew Valley for ITB Project",
-    description: `Managed and led the development of a Farm Life Simulator game in Java with a team of 4 programmers. Oversaw project architecture, team coordination, and core feature development including farming mechanics, NPC interactions, and time-based systems. Implemented 15+ design patterns (Factory Method, Strategy, Observer, Command) to ensure maintainable, extensible code architecture.`,
-    skills: ["Java", "Object-Oriented Design", "Design Patterns", "Game Development", "Team Coordination"],
-  },
-  {
-    year: "Sept 2024 – Okt 2024",
-    role: "Project & Product Manager SPARTA 2023",
-    company: "STEI KLINIK for SPARTA 2023",
-    description: `Led the development of STEI Klinik, a centralized web platform designed for ITB students to access healthcare services and manage health needs. Guided a multidisciplinary team through end-to-end product delivery, implementing appointment scheduling and secure medical records management.`,
-    skills: ["Next.js", "TypeScript", "Firebase", "Firestore", "REST API", "Tailwind CSS", "Team Leadership"],
-  },
-  {
-    year: "Agt 2023 – Dec 2023",
-    role: "Project Manager & Frontend Developer Pakansuper",
-    company: "Pakansuper",
-    description: `Managed and developed Pakansuper Marketplace, an online platform for animal feed products. Coordinated a team of programmers and designers, leading feature development and transaction integration, and successfully represented the campus in a national competition.`,
-    skills: ["WordPress", "Web Development", "Project Management", "Team Leadership"],
-  },
 ];
 
 export const PROJECTS = [
