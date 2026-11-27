@@ -14,13 +14,13 @@ const Project = () => {
       </motion.h1>
       <div className="flex flex-col items-center">
         {PROJECTS.map((project, index) => (
-          <div key={index} className="mb-12 flex w-full max-w-5xl flex-col lg:flex-row items-center lg:items-start justify-between gap-6 lg:gap-8">
+          <div key={index} className={`mb-12 flex w-full max-w-5xl flex-col gap-6 lg:gap-8 ${project.mobile ? "lg:flex-col items-center" : "lg:flex-row items-center lg:items-start justify-between"}`}>
             <motion.div
               whileInView={{opacity: 1, x: 0}}
               initial={{opacity: 0, x: -50}}
               transition={{duration: 0.5}}
               viewport={{ once: true, amount: 0.1 }}
-              className="w-full lg:w-2/5 flex justify-center lg:justify-start flex-shrink-0"
+              className="w-full flex justify-center flex-shrink-0"
             >
               <img
                 src={project.image}
@@ -37,15 +37,15 @@ const Project = () => {
               initial={{opacity: 0, x: 50}}
               transition={{duration: 0.5}}
               viewport={{ once: true, amount: 0.1 }}
-              className="w-full lg:w-3/5 text-center lg:text-justify"
+              className={`w-full text-center ${!project.mobile && "lg:w-3/5 lg:text-justify"}`}
             >
               <h6 className="mb-2 text-base sm:text-lg font-semibold text-white">
                 {project.title}
               </h6>
-              <p className="mb-4 text-xs sm:text-sm md:text-base leading-relaxed text-neutral-400 text-justify">
+              <p style={{ textAlign: project.mobile ? "center" : "justify" }} className="mb-4 text-xs sm:text-sm md:text-base leading-relaxed text-neutral-400">
                 {project.description}
               </p>
-              <div className="flex flex-wrap justify-center lg:justify-start gap-1.5 sm:gap-2 mb-4">
+              <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 mb-4">
                 {project.technologies.map((technology, index) => (
                   <span
                     key={index}
@@ -56,7 +56,7 @@ const Project = () => {
                 ))}
               </div>
               {project.link && (
-                <div className="flex justify-center lg:justify-start">
+                <div className="flex justify-center">
                   <a
                     href={project.link}
                     target="_blank"

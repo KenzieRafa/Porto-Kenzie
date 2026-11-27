@@ -44,7 +44,7 @@ const Experience = () => {
                 {experience.role} -{" "}
                 <span className="text-sm sm:text-base text-itb-light font-semibold">{experience.company}</span>
               </h6>
-              <p className="mb-4 text-xs sm:text-sm md:text-base leading-relaxed text-neutral-300 text-justify">
+              <p style={{ textAlign: "justify" }} className="mb-4 text-xs sm:text-sm md:text-base leading-relaxed text-neutral-300">
                 {renderBold(experience.description)}
               </p>
               <div className="flex flex-wrap gap-1.5 sm:gap-2">
