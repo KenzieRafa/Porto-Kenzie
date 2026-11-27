@@ -1,4 +1,4 @@
-import { SiPython, SiCplusplus, SiC, SiHaskell, SiTailwindcss, SiNextdotjs, SiMongodb, SiMongoose, SiPrisma, SiTypescript, SiFirebase, SiJava } from "react-icons/si";
+import { SiPython, SiCplusplus, SiC, SiHaskell, SiTailwindcss, SiNextdotjs, SiMongodb, SiMongoose, SiPrisma, SiTypescript, SiFirebase } from "react-icons/si";
 import { AiOutlineConsoleSql } from "react-icons/ai";
 import { RiReactjsLine } from "react-icons/ri";
 import { motion } from "framer-motion";
@@ -170,16 +170,6 @@ const Technologies = () => {
           className="rounded-xl sm:rounded-2xl border-2 sm:border-4 border-itb-blue p-2.5 sm:p-3 md:p-4 hover:border-itb-gold transition-colors"
         >
           <SiPrisma className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-itb-light" />
-        </motion.a>
-        <motion.a
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-xl sm:rounded-2xl border-2 sm:border-4 border-itb-blue p-2.5 sm:p-3 md:p-4 hover:border-itb-gold transition-colors"
-        >
-          <SiJava className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-red-500" />
         </motion.a>
       </motion.div>
     </div>
