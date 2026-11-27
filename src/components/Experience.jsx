@@ -2,6 +2,13 @@ import React from 'react';
 import { EXPERIENCES } from "../assets/constants";
 import { motion } from 'framer-motion';
 
+const renderBold = (text) =>
+  text.split(/(\*\*.*?\*\*)/g).map((part, i) =>
+    part.startsWith("**") && part.endsWith("**")
+      ? <strong key={i} className="text-white font-semibold">{part.slice(2, -2)}</strong>
+      : part
+  );
+
 const Experience = () => {
   return (
     <div id="experience" className="relative border-b border-neutral-900 pb-16 overflow-hidden">
@@ -19,11 +26,12 @@ const Experience = () => {
       </motion.h1>
       <div className="flex flex-col items-center gap-6">
         {EXPERIENCES.map((experience, index) => (
-          <motion.div 
-            key={index} 
+          <motion.div
+            key={index}
             whileInView={{opacity: 1, y: 0}}
             initial={{opacity: 0, y: 30}}
             transition={{duration: 0.5}}
+            viewport={{ once: true, amount: 0.1 }}
             className="w-full max-w-5xl rounded-2xl bg-itb-blue/10 border border-itb-blue/30 hover:border-itb-light/60 p-5 sm:p-7 shadow-xl hover:shadow-[0_0_25px_rgba(0,85,165,0.25)] transition-all duration-300 flex flex-col lg:flex-row justify-between gap-4 lg:gap-8 backdrop-blur-sm"
           >
             <div className="w-full lg:w-1/4">
@@ -37,7 +45,7 @@ const Experience = () => {
                 <span className="text-sm sm:text-base text-itb-light font-semibold">{experience.company}</span>
               </h6>
               <p className="mb-4 text-xs sm:text-sm md:text-base leading-relaxed text-neutral-300">
-                {experience.description}
+                {renderBold(experience.description)}
               </p>
               <div className="flex flex-wrap gap-1.5 sm:gap-2">
                 {experience.skills.map((skill, index) => (
