@@ -20,7 +20,7 @@ const Project = () => {
               initial={{opacity: 0, x: -50}}
               transition={{duration: 0.5}}
               viewport={{ once: true, amount: 0.1 }}
-              className="w-full lg:w-2/5 flex justify-center lg:justify-start flex-shrink-0"
+              className={`w-full flex flex-shrink-0 justify-center ${!project.mobile && "lg:w-2/5 lg:justify-start"}`}
             >
               <img
                 src={project.image}
