@@ -42,7 +42,7 @@ const Project = () => {
               <h6 className="mb-2 text-base sm:text-lg font-semibold text-white">
                 {project.title}
               </h6>
-              <p className="mb-4 text-xs sm:text-sm md:text-base leading-relaxed text-neutral-400">
+              <p className="mb-4 text-xs sm:text-sm md:text-base leading-relaxed text-neutral-400 text-justify">
                 {project.description}
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-1.5 sm:gap-2 mb-4">
