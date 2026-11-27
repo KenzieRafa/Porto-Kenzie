@@ -1,5 +1,5 @@
-import heroBg from "../assets/hero-bg.png";
-import profileMobile from "../assets/profile-mobile.png";
+import heroBg from "../assets/hero.png";
+import profileMobile from "../assets/mobile.png";
 import { motion } from "framer-motion";
 
 const container = (delay) => ({
