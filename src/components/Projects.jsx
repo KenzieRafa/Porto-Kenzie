@@ -37,7 +37,7 @@ const Project = () => {
               initial={{opacity: 0, x: 50}}
               transition={{duration: 0.5}}
               viewport={{ once: true, amount: 0.1 }}
-              className="w-full lg:w-3/5 text-center lg:text-left"
+              className="w-full lg:w-3/5 text-center lg:text-justify"
             >
               <h6 className="mb-2 text-base sm:text-lg font-semibold text-white">
                 {project.title}

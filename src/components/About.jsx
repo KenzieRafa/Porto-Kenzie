@@ -44,7 +44,7 @@ const About = () => {
             <div className="flex justify-center lg:justify-start">
                 <div className="max-w-xl py-4 sm:py-6 px-5 sm:px-6 rounded-2xl bg-itb-blue/10 border border-itb-blue/30 backdrop-blur-sm shadow-xl">
                     {DESCRIPTION.split("\n\n").map((para, i) => (
-                      <p key={i} className="text-sm sm:text-base leading-relaxed text-neutral-200 text-center lg:text-left mb-3 last:mb-0">
+                      <p key={i} className="text-sm sm:text-base leading-relaxed text-neutral-200 text-justify mb-3 last:mb-0">
                         {renderBold(para)}
                       </p>
                     ))}
